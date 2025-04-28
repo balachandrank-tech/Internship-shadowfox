@@ -6,7 +6,7 @@
 .overall {
     width: 100%;
     min-height: 100vh;
-    background-color: blueviolet;
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -32,8 +32,8 @@ nav {
 
 nav a:hover,
 nav a.active{
-    color:greenyellow;
-    border-bottom: 3px solid greenyellow;
+    color:yellowgreen;
+    border-bottom: 3px solid yellowgreen;
 }
 .logo 
    {
@@ -75,21 +75,20 @@ span{
 }
 
 
-.btn-2{
-    padding:15px 28px;
-    /* background-color:red; */
+.btn2{
+    /* padding:15px ; */
     color: white;
     border: 2px solid black;
+    text-align: center;
     border-radius: 8px;
-    font-size: 18px;
     letter-spacing: 1px;
     font-weight: 600;
     transition: 0.3s ease;
     cursor: pointer;
 }
-.btn-2:hover{
+.btn2:hover{
     background-color: white;
-    color: greenyellow;
+    color:yellowgreen;
     
 }
 
@@ -143,41 +142,46 @@ span{
     height: 40px;
     color: black;
     border:none;
+   
     /* box-shadow: 0 0 20px  rgb(148, 248, 8); */
     background-color: white;
     margin-block: 20px;
 }
 
 
-.icon-left-info {
+
+
+.icon-left-info { 
     display: flex;
     justify-content: space-between;
     font-size: 30px;
     color: white;
-    text-shadow: 0 0 30px  rgb(148, 248, 8);
+    border-radius: 50%;
+    
+    text-shadow: 0 0 30px rgb(148, 248, 8) ;
     margin-block:20px ;
     margin-top: 20px;
+   
 }
 .card-right {
     width: 50%;
     min-height: 400px;
-    /* background-color:blueviolet; */
     display: flex;
     justify-content: center;
     align-items: center; 
     overflow: hidden;  
 }
 .image-bg img {
-    width: 350px;
-    height: 300px;
+    width: 250px;
+    height: 280px;
     border-radius: 50%;
-    border: 2px solid greenyellow;
+    border: 2px solid yellowgreen;
     align-items: center;
 }
 
 .image-bg {
-    width: 350px;
-    height: 300px;
+    width: 250px;
+    height: 280px;
     scale: 0;
     background-color: white;
     border-radius: 50%;
@@ -186,8 +190,6 @@ span{
     animation: slow linear forwards;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    animation-timeline: vewie();
-    animation-range: entry;
     transition: all 1s;
     position: relative;
     
@@ -226,7 +228,7 @@ span{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 20px;
+        padding: 10px;
        
     }
 
@@ -236,6 +238,11 @@ span{
     .icon-left-info {
         width: 100%;
         justify-content: space-between;
+        color: greenyellow;
+        font-size:24px;
+   
+
+       
     }
     
     
@@ -262,15 +269,15 @@ span{
    align-items: center;
 }
 .image-border img {
-    width: 350px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     align-items: center;
 }
 
 .image-border img {
-    width: 350px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     scale: 0;
     background-color: white;
     border-radius: 50%;
@@ -278,27 +285,12 @@ span{
     animation: slow linear forwards;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    animation-timeline: vewie();
-    animation-range: entry;
+   
     transition: all 1s;
     position: relative;
     
 }
-/* .border-border img{
-    width: 250px;
-    min-height: 250px;
-    border-radius: 50%;
-    
-} */
-/* .image-border {
-    width: 350px;
-    min-height: 350px;
-    background-color:black;
-    border: 15px solid rgb(148, 248, 8);
-    box-shadow: 0 0 20px rgb(148, 248, 8),0 0 40px rgb(148, 248, 8),0 0 20px rgb(148, 248, 8) inset;
-    border-radius: 50%;
-    
-} */
+
 .about-info {
     width: 40%;
     min-height: 400px;
@@ -369,16 +361,34 @@ input:checked~.subnav
     background-color:black;
    }   
 }
-/* -----------------------service--------------------------- */
+
 /* ------------------------------------------Skill start----------------------------------------------------- */
+
+/* --------------------------card2--------------------- */
+span{
+    color:greenyellow;
+}
+
+#tpc{
+    box-shadow: 0 0 5px black;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+}
+#tpc:hover{
+    transform:translatey(-40px);
+
+}
+
+/* card2 */
+
+
 .skill-section
 {
     width: 100%;
     min-height: 100vh;
     background-color: black;
-    /* min-height: 70vh;
-    width: 100%; */
-    /* background-color:rgb(10, 16, 37) ; */
+    
   
     background-image: linear-gradient(to right,rgba(0, 0, 0, 0.748) rgba(0, 0, 0, 0.748));
     color: white;
@@ -399,7 +409,7 @@ input:checked~.subnav
     justify-content: center;
     align-items: center;
     gap: 30px;
-    /* background-color: red; */
+   
 }
 .skill-box
 {
@@ -410,6 +420,11 @@ input:checked~.subnav
     border:1px solid  rgb(148, 248, 8);
     box-shadow: 0 0 5px 1px  rgb(148, 248, 8);
 }
+.skill-overall-box:hover{
+    transform: translateX(1);
+    cursor: pointer;
+
+}
 .frontend-skills
 {
     height: 180px;
@@ -419,8 +434,7 @@ input:checked~.subnav
     align-items: center;
     flex-wrap: wrap;
     column-gap: 20px;
-    /* padding: 10px; */
-    /* background-color: yellow; */
+   
 }
 .skill-items
 {
@@ -431,10 +445,15 @@ input:checked~.subnav
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    
     font-size: 15px;
     padding: 10px;
     gap: 5px;
+}
+.skill-items:hover{
+    background-color: aquamarine;
+    transform: scale(1.2);
+
 }
 .skill-items img
 {
@@ -478,6 +497,26 @@ input:checked~.subnav
      }
  
 }
+/* -----------------------------education---------------------------------------------- */
+
+
+span{
+    color:greenyellow;
+    text-align: center;
+}
+
+#tpc{
+    box-shadow: 0 0 5px black;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+}
+#tpc:hover{
+    transform:translatey(-40px);
+
+}
+
+
 
 /* --------------------------projects---------------------------------- */
 .projects {
@@ -489,7 +528,8 @@ input:checked~.subnav
     align-items: center;
     flex-direction: column;
     color: white;
-    border: 2px solid white;  
+    border: 2px solid white;
+    border: none;  
 }
 .projects span {
     color: rgb(148, 248, 8);
@@ -541,9 +581,8 @@ input:checked~.subnav
 .project-content {
     width: 100%;
     height: 300px;
-    /* background-color: cadetblue; */
     position: absolute;
-   transform: translatex(100%);
+    transform: translatex(100%);
     transition: transform 1s ease-in-out;
     bottom: 0; 
     background-image: linear-gradient( to top, transparent ,rgb(148, 248, 8) 70%);
